@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>ProjectsMail</title>
+</head>
+
+<body>
+    <div class="box">
+        <div class="content-1">
+            <h1 class="h-titulo">ProjectsMail</h1>
+            <p class="p-descricao">Inscreva-se para receber as últimas oportunidades de projetos de programação
+                diretamente em seu e-mail. Mantenha-se atualizado e aproveite as melhores oportunidades para expandir
+                suas habilidades e avançar em sua carreira de desenvolvedor.</p>
+        </div>
+        <form action="POST">
+            <label for="caixa-nome" class="label label-name">Nome</label>
+            <input type="text" id="caixa-nome" class="inputt input-name" placeholder="Seu nome e sobrenome">
+
+            <label for="caixa-email" id="label-email">E-mail</label>
+            <input type="email" name="" id="caixa-email" class="inputt input-email"
+                placeholder="Coloque o seu melhor e-mail">
+
+            <label for="caixa-email" id="label-select">Sua área de atuação</label>
+            <select name="" id="selectbox">
+                <option value="selecione">
+                    -- Selecione sua área
+                </option>
+
+                <option value="frontend">
+                    Front-End
+                </option>
+                <option value="backend">
+                    Back-End
+                </option>
+                <option value="fullstack">
+                    Fullstack
+                </option>
+            </select>
+
+            <div class="content-politicas-de-privacidade">
+                <input type="checkbox" name="privacidade" id="privacidade" class="box-privacidade">
+                <label for="privacidade" class="label-privacidade">Você concorda com as <a href="view/privacidade.html">políticas de privacidade</a> ?</label>
+            </div>
+
+            <button type="submit" class="btn-enviar">Fazer sua inscrição</button>
+        </form>
+    </div>
+
+    <script src="server.js"></script>
+    <script src="JS/form.js"></script>
+    <script src="JS/sendEmail.js"></script>
+</body>
+
+</html>
